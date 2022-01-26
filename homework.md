@@ -8,12 +8,12 @@ and practice with terraform and SQL
 Install Google Cloud SDK. What's the version you have? 
 
 To get the version, run `gcloud --version`
-
+Google Cloud SDK 369.0.0
 ## Google Cloud account 
 
 Create an account in Google Cloud and create a project.
 
-
+dtc-de-course-339121
 ## Question 2. Terraform 
 
 Now install terraform and go to the terraform directory (`week_1_basics_n_setup/1_terraform_gcp/terraform`)
@@ -25,6 +25,13 @@ After that, run
 * `terraform apply` 
 
 Apply the plan and copy the output to the form
+
+    google_bigquery_dataset.dataset: Creating...
+    google_storage_bucket.data-lake-bucket: Creating...
+    google_storage_bucket.data-lake-bucket: Creation complete after 7s [id=dtc_data_lake_dtc-de-course-339121]
+    google_bigquery_dataset.dataset: Creation complete after 7s [id=projects/dtc-de-course-339121/datasets/trips_data_all]
+
+    Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
 
 ## Prepare Postgres 
 
@@ -41,31 +48,33 @@ Download this data and put it to Postgres
 ## Question 3. Count records 
 
 How many taxi trips were there on January 15?
-select count(*)
-from yellow_taxi_trips where cast(tpep_pickup_datetime as date) = '2021-01-15'
-53024
+	select count(*)
+	from yellow_taxi_trips where cast(tpep_pickup_datetime as date) = '2021-01-15'
+	
+	53024
 
 ## Question 4. Average
 average tip: 159.05
-with maxtable as(select max(tip_amount) baller,cast(tpep_pickup_datetime as date) dt 
-	  from yellow_taxi_trips group by dt) 
-	  select avg(baller) from maxtable
+	with maxtable as(select max(tip_amount) baller,cast(tpep_pickup_datetime as date) dt 
+		from yellow_taxi_trips group by dt) 
+	 	select avg(baller) from maxtable
 
 Find the largest tip for each day. 
 On which day it was the largest tip in January?
 1140.44 2021-1-20
-select max(tip_amount) baller,cast(tpep_pickup_datetime as date) dt 
-	  from yellow_taxi_trips group by dt order by baller desc
+	select max(tip_amount) baller,cast(tpep_pickup_datetime as date) dt 
+	  	from yellow_taxi_trips group by dt order by baller desc
 (note: it's not a typo, it's "tip", not "trip")
 
 ## Question 5. Most popular destination
 
 What was the most popular destination for passengers picked up 
 in central park on January 14?
-elect count("DOLocationID") DOL,"DOLocationID" from yellow_taxi_trips  
-where "PULocationID" = 43 and
-CAST(tpep_pickup_datetime as date) = '2021-1-14' 
-group by "DOLocationID" order by DOL Desc limit 1
+	select count("DOLocationID") DOL,"DOLocationID" from yellow_taxi_trips  
+	where "PULocationID" = 43 and
+	CAST(tpep_pickup_datetime as date) = '2021-1-14' 
+	group by "DOLocationID" order by DOL Desc limit 1
+
 Enter the district name (not id)
 237,"Manhattan","Upper East Side South","Yellow Zone"
 
@@ -82,15 +91,11 @@ average price for a ride (calculated based on `total_amount`)?
 39,"Brooklyn","Canarsie","Boro Zone"
 262.85
 
-select "PULocationID","DOLocationID", avg(total_amount)
-from yellow_taxi_trips 
-where "DOLocationID" != 265 and "DOLocationID" != 264
-group by ("PULocationID","DOLocationID") 
-order by  avg(total_amount) desc
-
-
-
-
+	select "PULocationID","DOLocationID", avg(total_amount)
+	from yellow_taxi_trips 
+	where "DOLocationID" != 265 and "DOLocationID" != 264
+	group by ("PULocationID","DOLocationID") 
+	order by  avg(total_amount) desc
 
 ## Submitting the solutions
 
