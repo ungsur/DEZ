@@ -55,10 +55,11 @@ How many taxi trips were there on January 15?
 
 ## Question 4. Average
 average tip: 159.05
+```
 	with maxtable as(select max(tip_amount) baller,cast(tpep_pickup_datetime as date) dt 
 		from yellow_taxi_trips group by dt) 
 	 	select avg(baller) from maxtable
-
+```
 Find the largest tip for each day. 
 On which day it was the largest tip in January?
 1140.44 2021-1-20
