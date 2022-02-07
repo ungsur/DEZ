@@ -4042,3 +4042,73 @@ Please take a look at these docs to improve your DAG import time:
 [2022-02-07 06:27:44,590] {logging_mixin.py:109} INFO - [2022-02-07 06:27:44,590] {dag.py:2396} INFO - Sync 1 DAGs
 [2022-02-07 06:27:44,620] {logging_mixin.py:109} INFO - [2022-02-07 06:27:44,620] {dag.py:2935} INFO - Setting next_dagrun for data_ingestion_gcs_dag to 2022-02-07T00:00:00+00:00
 [2022-02-07 06:27:44,642] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag.py took 1.598 seconds
+[2022-02-07 06:28:14,729] {processor.py:163} INFO - Started process (PID=14993) to work on /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-02-07 06:28:14,733] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag.py for tasks to queue
+[2022-02-07 06:28:14,736] {logging_mixin.py:109} INFO - [2022-02-07 06:28:14,736] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-02-07 06:28:17,198] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-02-07 06:28:17,227] {logging_mixin.py:109} INFO - [2022-02-07 06:28:17,227] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-07 06:28:17,254] {logging_mixin.py:109} INFO - [2022-02-07 06:28:17,254] {dag.py:2935} INFO - Setting next_dagrun for data_ingestion_gcs_dag to 2022-02-07T00:00:00+00:00
+[2022-02-07 06:28:17,278] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag.py took 2.555 seconds
+[2022-02-07 06:28:48,437] {processor.py:163} INFO - Started process (PID=15017) to work on /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-02-07 06:28:48,453] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag.py for tasks to queue
+[2022-02-07 06:28:48,467] {logging_mixin.py:109} INFO - [2022-02-07 06:28:48,467] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-02-07 06:28:53,031] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-02-07 06:28:53,517] {logging_mixin.py:109} INFO - [2022-02-07 06:28:53,517] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-07 06:28:53,543] {logging_mixin.py:109} INFO - [2022-02-07 06:28:53,542] {dag.py:2935} INFO - Setting next_dagrun for data_ingestion_gcs_dag to 2022-02-07T00:00:00+00:00
+[2022-02-07 06:28:53,562] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag.py took 5.143 seconds
+[2022-02-07 06:29:23,943] {processor.py:163} INFO - Started process (PID=15052) to work on /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-02-07 06:29:23,959] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag.py for tasks to queue
+[2022-02-07 06:29:23,965] {logging_mixin.py:109} INFO - [2022-02-07 06:29:23,964] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-02-07 06:29:27,377] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-02-07 06:29:27,402] {logging_mixin.py:109} INFO - [2022-02-07 06:29:27,401] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-07 06:29:27,448] {logging_mixin.py:109} INFO - [2022-02-07 06:29:27,448] {dag.py:2935} INFO - Setting next_dagrun for data_ingestion_gcs_dag to 2022-02-07T00:00:00+00:00
+[2022-02-07 06:29:27,471] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag.py took 3.555 seconds
+[2022-02-07 06:29:58,074] {processor.py:163} INFO - Started process (PID=15076) to work on /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-02-07 06:29:58,078] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag.py for tasks to queue
+[2022-02-07 06:29:58,080] {logging_mixin.py:109} INFO - [2022-02-07 06:29:58,080] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-02-07 06:29:59,945] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-02-07 06:30:00,361] {logging_mixin.py:109} INFO - [2022-02-07 06:30:00,360] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-07 06:30:00,383] {logging_mixin.py:109} INFO - [2022-02-07 06:30:00,383] {dag.py:2935} INFO - Setting next_dagrun for data_ingestion_gcs_dag to 2022-02-07T00:00:00+00:00
+[2022-02-07 06:30:00,404] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag.py took 2.335 seconds
+[2022-02-07 06:30:30,605] {processor.py:163} INFO - Started process (PID=15103) to work on /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-02-07 06:30:30,620] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag.py for tasks to queue
+[2022-02-07 06:30:30,639] {logging_mixin.py:109} INFO - [2022-02-07 06:30:30,638] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-02-07 06:30:32,563] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-02-07 06:30:32,586] {logging_mixin.py:109} INFO - [2022-02-07 06:30:32,585] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-07 06:30:32,623] {logging_mixin.py:109} INFO - [2022-02-07 06:30:32,623] {dag.py:2935} INFO - Setting next_dagrun for data_ingestion_gcs_dag to 2022-02-07T00:00:00+00:00
+[2022-02-07 06:30:32,647] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag.py took 2.065 seconds
+[2022-02-07 06:31:02,887] {processor.py:163} INFO - Started process (PID=15138) to work on /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-02-07 06:31:02,902] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag.py for tasks to queue
+[2022-02-07 06:31:02,905] {logging_mixin.py:109} INFO - [2022-02-07 06:31:02,904] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-02-07 06:31:05,568] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-02-07 06:31:06,290] {logging_mixin.py:109} INFO - [2022-02-07 06:31:06,290] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-07 06:31:06,334] {logging_mixin.py:109} INFO - [2022-02-07 06:31:06,334] {dag.py:2935} INFO - Setting next_dagrun for data_ingestion_gcs_dag to 2022-02-07T00:00:00+00:00
+[2022-02-07 06:31:06,374] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag.py took 3.500 seconds
+[2022-02-07 06:31:36,620] {processor.py:163} INFO - Started process (PID=15166) to work on /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-02-07 06:31:36,631] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag.py for tasks to queue
+[2022-02-07 06:31:36,636] {logging_mixin.py:109} INFO - [2022-02-07 06:31:36,636] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-02-07 06:31:38,856] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-02-07 06:31:38,892] {logging_mixin.py:109} INFO - [2022-02-07 06:31:38,892] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-07 06:31:38,942] {logging_mixin.py:109} INFO - [2022-02-07 06:31:38,942] {dag.py:2935} INFO - Setting next_dagrun for data_ingestion_gcs_dag to 2022-02-07T00:00:00+00:00
+[2022-02-07 06:31:38,974] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag.py took 2.369 seconds
+[2022-02-07 06:32:09,279] {processor.py:163} INFO - Started process (PID=15190) to work on /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-02-07 06:32:09,283] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag.py for tasks to queue
+[2022-02-07 06:32:09,290] {logging_mixin.py:109} INFO - [2022-02-07 06:32:09,289] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-02-07 06:32:10,318] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-02-07 06:32:10,854] {logging_mixin.py:109} INFO - [2022-02-07 06:32:10,854] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-07 06:32:10,920] {logging_mixin.py:109} INFO - [2022-02-07 06:32:10,919] {dag.py:2935} INFO - Setting next_dagrun for data_ingestion_gcs_dag to 2022-02-07T00:00:00+00:00
+[2022-02-07 06:32:10,947] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag.py took 1.675 seconds
+[2022-02-07 06:32:41,078] {processor.py:163} INFO - Started process (PID=15226) to work on /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-02-07 06:32:41,083] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag.py for tasks to queue
+[2022-02-07 06:32:41,086] {logging_mixin.py:109} INFO - [2022-02-07 06:32:41,086] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-02-07 06:32:42,324] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-02-07 06:32:42,344] {logging_mixin.py:109} INFO - [2022-02-07 06:32:42,344] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-07 06:32:42,374] {logging_mixin.py:109} INFO - [2022-02-07 06:32:42,374] {dag.py:2935} INFO - Setting next_dagrun for data_ingestion_gcs_dag to 2022-02-07T00:00:00+00:00
+[2022-02-07 06:32:42,439] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag.py took 1.366 seconds
+[2022-02-07 06:33:12,770] {processor.py:163} INFO - Started process (PID=15252) to work on /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-02-07 06:33:12,774] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag.py for tasks to queue
+[2022-02-07 06:33:12,779] {logging_mixin.py:109} INFO - [2022-02-07 06:33:12,779] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-02-07 06:33:16,160] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-02-07 06:33:16,530] {logging_mixin.py:109} INFO - [2022-02-07 06:33:16,530] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-07 06:33:16,574] {logging_mixin.py:109} INFO - [2022-02-07 06:33:16,573] {dag.py:2935} INFO - Setting next_dagrun for data_ingestion_gcs_dag to 2022-02-07T00:00:00+00:00
+[2022-02-07 06:33:16,630] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag.py took 3.916 seconds
